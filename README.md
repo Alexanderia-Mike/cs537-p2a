@@ -1,4 +1,4 @@
-This is a course project based on XV6 Operating System that implements lottery scheduling. 
+This is a course project based on XV6 Operating System that implements lottery scheduling. The detailed requirements can be found in the file [P2A_Scheduling.pdf](https://github.com/Alexanderia-Mike/p2a/blob/main/P2A_%20Scheduling.pdf)
 
 ### Brief Introduction 
 One of the jobs of operating systems is to schedule different processes properly so that the processes could proceed together fairly and appropriately according to their priorities.
