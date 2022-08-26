@@ -6,4 +6,5 @@ In XV6 Operating system, the default scheduling strategy is round-robin scheduli
 In this project, the lottery scheduling is implemented to improve the scheduling strategy. In lottery scheduling, each process is assigned with a certain amount of lotteries, and the more the lotteries there are, the higher the priority that process is given. Specifically speaking, during the context switching process, a random number is generated, ranging from 0 to the total number of lotteries `num_lotteries`, and each process `p_i` will be mapped to a certain interval `[start_i, end_i]`, and the length of the interval is the number of lotteries held by that process. Therefore, the larger the interval is, the higher the probability of that process being picked as the next running process is, thus giving that process a higher priority.
 
 ### Codes
-the main modification of codes are shown in the files `proc.c`
+the main modification of codes are shown in the files `user.h` `sysproc.h` `proc.c` `syscall.c` `usys.S` `syscall.h` `proc.h` `trap.c`.
+At each place where new codes are added, those new codes are bounded by a pair of comments `/* added for project begin # */` and `/* added for project end # */`
